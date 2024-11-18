@@ -1,4 +1,3 @@
-
 //html form element to display cars
 const result = document.getElementById("result"); 
 
