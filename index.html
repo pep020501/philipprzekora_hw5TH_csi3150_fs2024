@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Cars for sale </title>
+    <!--css-->
+    <link rel = "stylesheet" href="./css/site-styling.css">
+    <!--js-->
+    <script src="./js/usedCars.js"defer></script>
+    <script src="./js/index.js" defer></script>
+  
+</head>
+<body>
+    <div class="header-container">
+        <h1>Used Cars </h1>
+        <div class = "filter-container">
+        <form id="filter-items">
+            <!--select color-->
+            <div id ="color-container">
+            <h3>Color: </h3>
+            <select id ="color" multiple>
+            <option value="default"> --Select Color </option>
+            <option value="silver"> Silver </option>
+            <option value="white"> White </option>
+            <option value="black"> Black</option>
+            <option value="blue"> Blue</option>
+            <option value="red"> Red</option>
+             <option value="green"> Green </option>
+            </select>
+            </div>
+ 
+            <!--select make-->
+            <div id = "make-container">
+            <h3>Make: </h3>
+            <select id = "make" multiple>
+            <option value="default"> --Select Make </option>
+            <option value="toyota"> Toyota </option>
+            <option value="ford"> Ford </option>
+            <option value="honda"> Honda </option>
+            <option value="nissan"> Nissan </option>
+            <option value="chevrolet"> Chevrolet </option>
+            <option value="volks"> Volkswagon </option>
+            <option value="hyundai"> Hyundai </option>
+            <option value="subaru"> Subaru </option>
+            <option value="kia"> Kia </option>
+            <option value="mazda"> Mazda </option>
+            <option value="bmw"> BMW </option>
+            <option value="porsche"> Porsche </option>
+            <option value="dodge"> Dodge </option>
+            <option value="jaguar"> Jaguar </option>
+            <option value="tesla"> Tesla </option>
+            <option value="cadillac"> Cadillac </option>
+            <option value="lexus"> Lexus </option>
+            </select>
+            </div>
+            
+            <!--year range-->
+            <div id="year-container">
+            <h3>Year: </h3>
+            <input type="text" name="min-year" id="min-year" placeholder="From "/>
+            <input type="text" name="max-year" id="max-year" placeholder="To"/> 
+            </div>
+
+            <!--price range-->
+            <div id="price-container">
+            <h3>Price Range: </h3>
+            <input type="text" name="min-price" id="min-price" placeholder="From "/>
+            <input type="text" name="max-year" id="max-price" placeholder="To"/>
+            </div>
+
+            <!--mileage range -->
+            <div id="mileage-container">
+            <h3>Mileage: </h3>
+            <input type="text" name="min-range" id="min-range" placeholder="From "/>
+            <input type="text" name="max-range" id="max-range" placeholder="To"/>
+            </div>
+
+            <!--button container-->
+            <div class="button-container">
+            <button type="submit" id="filter-results">Search</button>
+            <button type="submit" id="clear-results">Clear</button>
+            </div>
+         </form>
+       </div>
+    </div>
+
+    <!--listings-->
+    <div id="result">
+
+    </div>
+    
+
+</body>
+</html>
