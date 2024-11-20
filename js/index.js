@@ -29,7 +29,7 @@ function showResults(carData){
 }
 
 //select options 
-function updateSelectOptions(filteredCars) {
+function selectOptions(filteredCars) {
     // Color and make select variables 
     const colorSelect = document.getElementById("color");
     const makeSelect = document.getElementById("make");
@@ -80,7 +80,7 @@ function filterData(){
         (isNaN(maxMiles) || car.mileage <= maxMiles)
       );
     });
-     updateSelectOptions(filteredCars);
+     selectOptions(filteredCars);
   return filteredCars;
 }
 
@@ -95,7 +95,7 @@ document.getElementById("filter-results").addEventListener("click", (e) => {
 function clearResults(){
 document.getElementById("filter-items").reset();
 showResults(usedCars);
-updateSelectOptions(usedCars);
+selectOptions(usedCars);
 }
 
 //event handler for clear button 
