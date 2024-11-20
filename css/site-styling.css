@@ -145,7 +145,7 @@ h3 {
   background: #9c0d0d;
 }
 
-/* display of car lisitngs */
+/* display of car listings */
 #result {
   display: flex;
   flex-direction: row;
