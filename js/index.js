@@ -30,14 +30,14 @@ function showResults(carData){
 
 //select options 
 function updateSelectOptions(filteredCars) {
-    // Update the color 
+    // Color and make select variables 
     const colorSelect = document.getElementById("color");
     const makeSelect = document.getElementById("make");
 
     const uniqueColors = [...new Set(filteredCars.map(car => car.color))];
     const uniqueMakes = [...new Set(filteredCars.map(car => car.make))];
 
-    // create option elements
+    // create option elements for color and make selection
     const createOptions = (selectElement, optionsArray) => {
         selectElement.innerHTML = '<option value="">Select...</option>';
         optionsArray.forEach(optionValue => {
